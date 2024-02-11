@@ -1,0 +1,43 @@
+\documentclass{article}
+
+\usepackage[paperwidth=3.5in, paperheight=2in, margin=0.3in]{geometry}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{qrcode}
+\usepackage{parskip}
+\usepackage{fontawesome}
+
+\pagestyle{empty}
+
+\begin{document}
+
+{\Large\textbf{Archit Gupta}}
+
+Software Engineer \\ FOSS Enthusiast
+
+\begin{tikzpicture}[overlay,
+    remember picture,
+    inner sep=0pt,
+    shift=(current page.north)]
+  \node[anchor=north west] at (0, -0.3in) {%
+    \makebox[0.5\textwidth]{%
+      \includegraphics[width=0.24\textwidth]{icon.png}
+      \hfill
+      \raisebox{\depth}{%
+        \qrcode[height=0.24\textwidth]{https://www.accelbread.com}}}};
+\end{tikzpicture}
+
+\vfill
+
+\centerline{Interested in Nix, Linux, Emacs, Wasm, etc.}
+
+\vfill
+
+{\small\faEnvelopeO} \texttt{archit@accelbread.com}
+\hfill {\small\faGithub} \texttt{accelbread}
+\\ {\small\faUser} \texttt{@accelbread:matrix.org}
+\hfill {\small\faGlobe} \texttt{Seattle, WA}
+
+\end{document}
+
+
